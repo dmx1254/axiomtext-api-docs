@@ -35,9 +35,13 @@ Pour obtenir votre token API :
 
 ### Envoyer un SMS
 
+Envoyez des SMS à vos utilisateurs avec une signature personnalisée. L'envoi national (au Sénégal) coûte **1 crédit SMS** par message, déduit du forfait de l'utilisateur. Pour les envois internationaux, chaque message est facturé **3 crédits**.
+
 ```bash
 POST /sms/message
 ```
+
+La signature est le nom de la compagnie que vous avez utilisé lors de l'inscription sur la plateforme axiomtext.
 
 **Paramètres :**
 ```json
@@ -64,15 +68,18 @@ POST /sms/message
 
 ### Envoyer un code OTP
 
+Envoyez un code OTP à un numéro de téléphone pour la vérification. L'envoi national (au Sénégal) coûte **1 crédit SMS** par message, déduit du forfait de l'utilisateur. Pour les envois internationaux, chaque message est facturé **3 crédits**.
+
 ```bash
 POST /sms/otp/send
 ```
+La signature est le nom de la compagnie que vous avez utilisé lors de l'inscription sur la plateforme axiomtext.
 
 **Paramètres :**
 ```json
 {
   "phone": "+221xxxxxxxxx",
-  "signature": "Nom de la société" // Optionnel
+  "signature": "Nom de la société"
 }
 ```
 
