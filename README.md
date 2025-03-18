@@ -48,7 +48,7 @@ La signature est le nom de la compagnie que vous avez utilisé lors de l'inscrip
 {
   "to": "+221xxxxxxxxx",
   "message": "Votre message",
-  "signature": "Nom de la société" // Optionnel
+  "signature": "Nom de la société"
 }
 ```
 
